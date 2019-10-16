@@ -105,10 +105,10 @@ M593 F50						; cancel ringing at 50Hz
 ;M376 H15						; bed compensation taper
 
 ;tool offsets
-G10 P0 X-9 Y39 Z-5					; T0
-G10 P1 X-9 Y39 Z-5					; T1
-G10 P2 X-9 Y39 Z-5					; T2
-G10 P3 X-9 Y39 Z-5					; T3
+G10 P0 X-9 Y39 Z-5				; T0
+G10 P1 X-8.8 Y38.75 Z-4.97		; T1
+G10 P2 X-9.2 Y38.85 Z-4.94		; T2
+G10 P3 X-8.6 Y38.9 Z-5.02		; T3
 
 ;deselect tools
 T-1
