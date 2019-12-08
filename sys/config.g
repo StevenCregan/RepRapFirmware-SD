@@ -1,4 +1,3 @@
-
 ; Config.g
 ; Configuration file for Duet WiFi / Ethernet
 ; executed by the firmware on start-up
@@ -14,19 +13,19 @@ M555 P2 				; Set firmware compatibility to look like Marlin
 M550 P"ToolChanger" 		; Set machine name
 ;M587 S"ssid" P"password"	; WiFi Settings
 ;M552 S1 P"ssid"			; Enable WiFi Networking
-M552 S1					; Enable Networking
-M586 P0 S1	 			; Enable HTTP
-M586 P1 S0 				; Disable FTP
-M586 P2 S0 				; Disable Telnet
+M552 S1						; Enable Networking
+M586 P0 S1 					; Enable HTTP
+M586 P1 S0 					; Disable FTP
+M586 P2 S0 					; Disable Telnet
 
-M667 S1 				; Select CoreXY mode	
+M667 S1 					; Select CoreXY mode	
 
 ; Endstops
-M574 X1 Y1 S1			; Set X/Y use physical endstops
-M574 Z1 S2 				; Set Z endstop probe
+M574 X1 Y1 S1				; Set X/Y use physical endstops
+M574 Z1 S2 					; Set Z endstop probe
 M558 P7 X0 Y0 Z2 H3 F360 I0 T20000	; Set Z probe type to switch, the axes for which it is used and the dive height + speeds
-G31 P200 X0 Y0 Z0		; Set Z probe trigger value, offset and trigger height
-M557 X0:280 Y0:180 S20	; Define mesh grid
+G31 P200 X0 Y0 Z0	 		; Set Z probe trigger value, offset and trigger height
+M557 X0:280 Y0:180 S20	 	; Define mesh grid
 
 ; Drive direction
 M569 P0 S0 				; Drive 0 X
@@ -40,22 +39,22 @@ M569 P7 S0 				; Drive 7 COUPLER
 M569 P8 S0 				; Drive 8 UNUSED
 M569 P9 S0 				; Drive 9 UNUSED
 
-M584 X0 Y1 Z2 C7 E3:4:5:6 					; Apply custom drive mapping
-M208 X-35:328.5 Y-49:243 Z0:275 C0:500 S0	; Set axis maxima & minima
-M350 E8:8:8:8 C8 I0 						; Configure microstepping without interpolation
-M350 X16 Y16 Z16 I1							; Configure microstepping with interpolation
-M92 X100 Y100 Z1600 C100 E417:417:417:417	; Set steps per mm
-M566 X400 Y400 Z8 C2 E2:2:2:2				; Set maximum instantaneous speed changes (mm/min)
+M584 X0 Y1 Z2 C7 E3:4:5:6 						; Apply custom drive mapping
+M208 X-35:328.5 Y-49:243 Z0:275 C0:500 S0		; Set axis maxima & minima
+M350 E8:8:8:8 C8 I0 							; Configure microstepping without interpolation
+M350 X16 Y16 Z16 I1								; Configure microstepping with interpolation
+M92 X100 Y100 Z1600 C100 E417:417:417:417		; Set steps per mm
+M566 X400 Y400 Z8 C2 E2:2:2:2					; Set maximum instantaneous speed changes (mm/min)
 M203 X35000 Y35000 Z1200 C5000 E5000:5000:5000:5000	; Set maximum speeds (mm/min)
 M201 X6000 Y6000 Z400 C500 E2500:2500:2500:2500		; Set accelerations (mm/s^2)
-M906 X2000 Y2000 Z1330 C400 E1680:1680:1680:1680 I30; Set motor currents (mA) and motor idle factor in percent
-M84 S120 				; Set idle timeout
+M906 X2000 Y2000 Z1330 C400 E1680:1680:1680:1680 I30 	; Set motor currents (mA) and motor idle factor in percent
+M84 S120 						; Set idle timeout
 
 ;Stall Detection
-M915 C S5 F0 H200 R4700		; Coupler
+M915 C S5 F0 H200 R4700					; Coupler
 
 ;Stall Detection
-M915 X Y S5 F0 H400 R4700	; X / Y Axes
+M915 X Y S5 F0 H400 R4700				; X / Y Axes
 
 ; Heaters
 M305 P0 T100000 B4138 C0 	; Set thermistor 
@@ -114,7 +113,7 @@ M593 F50				; cancel ringing at 50Hz
 ;tool offsets
 G10 P0 X-9.00 Y39.00 Z-4.88		; T0
 G10 P1 X-9.18 Y38.79 Z-4.82		; T1
-G10 P2 X-9.56 Y38.88 Z-4.80		; T2
+G10 P2 X-9.56 Y38.88 Z-4.80 	; T2
 G10 P3 X-9.04 Y38.88 Z-4.92		; T3
 
 ;deselect tools
