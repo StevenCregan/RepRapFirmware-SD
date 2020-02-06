@@ -12,3 +12,4 @@ G29 S1
 
 ;PCF fan on
 ;M106 P4 S127
+M106 R2
