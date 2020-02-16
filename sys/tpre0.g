@@ -7,8 +7,8 @@
 ;Unlock Coupler
 M98 P/macros/Coupler - Unlock
 
-;Move to location
 ;Hemera Upgrade
+;Move to location
 G1 X-15.9 Y200 F50000
 
 ;Move in

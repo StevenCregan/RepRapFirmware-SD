@@ -12,22 +12,13 @@ G29 S2
 ;Purge nozzle
 ;M98 Ppurge.g
 
+;Hemera Upgrade
 ;Move In
-;G53 G1 X302.6 Y150 F50000
-;Hemera Upgrade
 G53 G1 X300.6 Y150 F50000
-
-;G53 G1 X302.6 Y200 F50000
-;Hemera Upgrade
 G53 G1 X300.6 Y200 F50000
-
-;G53 G1 X302.6 Y220 F50000
-;Hemera Upgrade
 G53 G1 X300.6 Y220 F50000
 
 ;Drop Off
-;G53 G1 X302.6 Y240.8 F5000
-;Hemera Upgrade
 G53 G1 X300.6 Y225.35 F50000
 
 ;Open Coupler
