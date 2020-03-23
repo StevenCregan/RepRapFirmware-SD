@@ -1,6 +1,8 @@
 ; homeall.g
 ; called to home all axes
 
+T-1			; Ensure that no tool is selected
+
 G90			; Ensure use of Absolute Positioning
 
 M98 Phomec.g		; Home C (ToolHead)
